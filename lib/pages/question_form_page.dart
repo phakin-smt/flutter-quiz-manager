@@ -27,6 +27,10 @@ class _QuestionFormPageState extends State<QuestionFormPage> {
   }
 
   Future<void> _saveQuestion() async {
+    if (_isSaving) {
+      return;
+    }
+
     if (!_formKey.currentState!.validate()) {
       return;
     }
