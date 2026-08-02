@@ -3,5 +3,5 @@ import 'package:flutter_quiz_manager/app.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(const QuizManagerApp());
+  runApp(QuizManagerApp());
 }
